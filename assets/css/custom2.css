@@ -225,8 +225,10 @@ body:after {
 .project-subtitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #49111cff; /* optional */
+  color: black; /* optional */
 }
+
+
 
 
 
@@ -288,33 +290,15 @@ body:after {
 
 /* ===== ABOUT PAGE CARD SYSTEM ===== */
 
-/* Make sure boxes can "float" above others */
-.post { position: relative; }
-
-/* Turn each major chunk into a card */
-.post header.major,
-.post > h2,
-.post .row {
-  background: 774c60ff; /* subtle card tint */
-  border: 1px solid rgba(169, 146, 125, 0.55);
-  border-radius: 14px;
-  padding: 1.4rem 1.6rem;
-   margin: 1.25rem 0;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
 
 /* Stronger hover */
-.post header.major:hover,
-.post > h2:hover,
-.post .row:hover {
-  transform: translateY(-6px) scale(1.01);
+/* Apply hover only to sections, not layout */
+.post section:hover {
+  transform: translateY(-6px) scale(1);
   box-shadow: 0 22px 55px rgba(0,0,0,0.22);
-  border-color: rgba(73, 17, 28, 0.65); /* night-bordeaux */
+  border-radius: 12px;
+  transition: 0.3s ease;
 }
-
-/* Prevent the plain H2 line from becoming its own "card" if you don't want it */
-.post > h2 { display: none; } /* optional: removes the standalone "My Story" card */
 
 
 
@@ -345,14 +329,145 @@ body:after {
   width: 100%;
   border-collapse: separate;
   border-spacing: 10px;
+  
 }
 
 .col-5.col-12-medium table td {
   background: rgba(234, 205, 194, 0.7);
-  border: 1px solid rgba(73, 17, 28, 0.25);
+  border: 1px solid rgba(4, 4, 4, 0.25);
   border-radius: 12px;
   padding: 0.7rem 0.8rem;
   font-weight: 600;
   color: #0a0908ff;
   text-align: center;
+  
 }
+
+#main .post p {
+  color: black !important;   /* deeper bordeaux */
+  font-size: 1.5rem;
+  line-height: 1.85;
+  font-weight: 500;
+}
+
+/* SECTION TITLES (My Story, Education, etc.) */
+.post h2 {
+  font-size: 1.8rem;            /* bigger */
+  font-weight: 700;
+  color: #49111c;               /* your dark tone */
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+/* Light line ONLY on About page */
+.about-page .post h2::after {
+  content: "";
+  display: block;
+              /* pick a number */
+  height: 5px;
+  background: #49111cff;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.about-page header.major h1 {
+  font-weight: 800;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+/* ONLY About page header box */
+.about-page header.major {
+  border: px solid #49111c;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+
+  /* NEW */
+  background: linear-gradient(
+    135deg,
+    rgba(125, 68, 68, 0.6),
+    rgba(88, 32, 43, 0.05)
+  );
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+/* ===== ABOUT PAGE: TURN OFF ZOOM HOVER ON CONTENT BLOCKS ===== */
+#main .post header.major:hover,
+
+#main .post .col-5.col-12-medium > ul:hover,
+#main .post .col-5.col-12-medium > table:hover,
+#main .post .col-5.col-12-medium > h2:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+
+/* ONE BIG HOVER CARD FOR ABOUT PAGE */
+.about-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+}
+
+.about-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.25);
+}
+
+.closing-message {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+
+/* ===== SECTION CARDS ===== */
+.post > h2,
+.post .row {
+  background: linear-gradient(
+    135deg,
+    rgba(125, 68, 68, 0.6),
+    rgba(88, 32, 43, 0.05));
+  
+  border: 1.5px solid #a9927dff; /* dusty taupe */
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+
+  transition: all 0.3s ease;
+}
+
+/* Remove bullets from all lists in About page */
+.post ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* ===== STRONGER PARAGRAPH TEXT (ALL PAGES) ===== */
+#main p {
+  color: black !important;   /* darker brown/black */
+  font-weight: 400 !important; /* slightly bold */
+  line-height: 2;
+}
+
+
+#main p,
+#main li,
+#main td {
+  text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
+
+
