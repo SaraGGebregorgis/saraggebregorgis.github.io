@@ -2037,27 +2037,10 @@ input, select, textarea {
 
 /* Box */
 
-	.box {
-		border: solid 2px;
-		margin-bottom: 2rem;
-		padding: 1.5rem;
-	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
-
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
-
-	.box {
-		border-color: #eeeeee;
-	}
+.box { border: solid 10px; margin-bottom: 2rem; padding: 1.5rem; } 
+.box > :last-child, .box > :last-child > :last-child, .box > :last-child > :last-child > :last-child { margin-bottom: 0; }
+ .box.alt { border: 0; border-radius: 0; padding: 0; } 
+ .box { border-color: #eeeeee; }
 
 /* Button */
 
@@ -2483,7 +2466,7 @@ input, select, textarea {
 	input[type="email"],
 	select,
 	textarea {
-		border-color: #eeeeee;
+		border-color: #ffffff;
 	}
 
 		input[type="text"]:focus,
@@ -4687,3 +4670,129 @@ input, select, textarea {
 		}
 
 	}
+
+.closing-message {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+
+	/* Image zoom on hover */
+.image a {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px; /* keeps it clean */
+}
+
+.image a img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.image a:hover img {
+  transform: scale(1.08);
+}
+
+
+
+/* Base style */
+.status {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Dot before text */
+.status::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* ✅ Completed (Green) */
+.updateproject.completed {
+  background-color: rgba(38, 167, 85, 0.1);
+  color: #02250f;
+}
+
+/* Base badge */
+.updateproject {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Dot (REQUIRED for ::before to show) */
+.updateproject::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Completed (green) */
+.updateproject.completed::before {
+  background-color: #177238;
+}
+
+/* In Progress (optional orange) */
+.updateproject.progress::before {
+  background-color: #f97316;
+}
+
+/* ⏳ In Progress (Orange) */
+.updateproject.progress {
+  background-color: rgba(249, 115, 22, 0.1);
+  color: rgb(96, 20, 20);
+}
+
+.updateproject.progress::before {
+  background-color: rgb(153, 42, 42);
+}
+
+.updateproject {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 4px 10px;
+  border-radius: 20px;   /* 🔥 THIS makes the box rounded */
+
+  background-color: rgba(34, 126, 67, 0.1); /* soft green */
+  color: #052812;
+}
+
+.updateproject {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.post h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.button.large {
+	  margin-top: 50px;
+}
+
+#intro {
+  background: linear-gradient(135deg, #49111cff, #0a0908ff);
+}
+
+

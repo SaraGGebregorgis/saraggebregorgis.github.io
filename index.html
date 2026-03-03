@@ -6,28 +6,53 @@
 -->
 <html>
 	<head>
+		
 		<title>Sara The Analyst Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom2.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		 <div id="wrapper" class="fade-in">
+			<div id="intro">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Sara The Analyst Portfolio<br />
-						</h1>
-						<p>Welcome to my portfolio, featuring data analytics projects where I use SQL, Excel, and Python to turn data into insights.
-							<br />
-						Check out my  <a href="https://github.com/SaraGGebregorgis">Github</a> for my latest work and my <a href="https://www.linkedin.com/in/sara-gebregorgis-30a691344/">Linkedln</a> to connect.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- TITLE (full width on top) -->
+  <h1 class="hero-title">Sara The Analyst Portfolio</h1>
+
+  <!-- TWO-COLUMN ROW -->
+  <div class="hero-row">
+
+    <!-- LEFT: WELCOME TEXT -->
+    <div class="hero-text">
+      <p>
+        Welcome to my Portfolio! I am Sara, a data analyst who enjoys turning messy data into clear, meaningful insights.
+      </p>
+
+      <p>
+        I work with SQL, Excel, and Python to explore patterns, answer questions, and tell stories with data.
+      </p>
+
+      <p>
+        Check out my <a href="https://github.com/SaraGGebregorgis">GitHub</a> for my latest work and my
+        <a href="https://www.linkedin.com/in/sara-gebregorgis-30a691344/">LinkedIn</a> to connect.
+      </p>
+
+      <ul class="actions">
+        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT: CIRCLE PHOTO -->
+    <div class="hero-photo">
+      <img src="images/sarag.png" alt="Sara" />
+    </div>
+
+  </div>
+</div>
 
 				<!-- Header -->
 					<header id="header">
@@ -38,25 +63,47 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="generic.html">About me</a></li>
+							<li><a href="aboutme.html">About me</a></li>
 				
 						</ul>
-						<li><a href="https://www.linkedin.com/in/sara-gebregorgis-30a691344/" class="icon brands fa-linkedin"><span class="label">Linkdln</span></a></li>
-							<li><a href="https://github.com/SaraGGebregorgis" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sara-gebregorgis-30a691344/" class="icon brands fa-linkedin"><span class="label">LinkdIn</span></a></li>
+							<li><a href="https://github.com/SaraGGebregorgis" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
 					</nav>
 
 				<!-- Main -->
+				 <div class="project-card">
+
 					<div id="main">
 
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="updateproject">In progress....</span>
+									
+
+									<span class="updateproject progress">   In progress...</span>
 									<h2><a href="#">A New Project I am working on!<br />
 									</a></h2>
-									<p>In this project we clean housing data in sql server</p>
+									<p class="project-subtitle">Pizza Sales Project</p>
+									<p>This project focuses on analyzing pizza sales data to uncover key business insights and trends. The dataset includes transaction-level data such as order details, product information, and sales performance.
+
+I am currently working on cleaning and transforming the data using SQL and Excel, including handling missing values, standardizing fields, and preparing the dataset for analysis.
+
+The next phase of this project involves building an interactive Power BI dashboard to visualize key metrics such as:
+
+Total revenue and sales trends over time
+
+Best-selling and worst-performing pizza categories
+
+Customer ordering patterns and peak sales periods
+
+Product performance and contribution to overall revenue
+
+This project demonstrates my ability to work across the full data analysis workflow — from raw data cleaning to building business-focused dashboards that support data-driven decision-making.</p>
+										
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="https://github.com/SaraGGebregorgis/Coffee-Orders-Project" class="image fit"><img src="images/pizzasales.png" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="#" class="button large">Veiw Project</a></li>
 								</ul>
@@ -66,11 +113,24 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="updateproject">Completed Project</span>
+										<span class="updateproject completed">   Completed Project</span>
+										<h2><a href="https://github.com/SaraGGebregorgis/sql-layoffs-exploratory-analysis">Global Layoffs<br />
+										 Project</a></h2>
+									</header>
+									<a href="https://github.com/SaraGGebregorgis/sql-layoffs-exploratory-analysis" class="image fit"><img src="images/layoffs.png" alt="" /></a>
+									<p>This SQL project focuses on analyzing global employee layoffs data using SQL by cleaning and transforming raw datasets into meaningful insights. I removed duplicates using ROW_NUMBER(), standardized text fields, handled missing values, and converted date formats. I then performed exploratory data analysis to uncover trends across companies, industries, and time periods, showcasing my ability to work with real-world data and generate business insights.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/SaraGGebregorgis/sql-layoffs-exploratory-analysis" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="updateproject completed">   Completed Project</span>
 										<h2><a href="https://github.com/SaraGGebregorgis/sql_retail_sales">Retail Sales<br />
 										 Project</a></h2>
 									</header>
-									<a href="https://github.com/SaraGGebregorgis/sql_retail_sales" class="image fit"><img src="images/retailsales.jpg" alt="" /></a>
+									<a href="https://github.com/SaraGGebregorgis/sql_retail_sales" class="image fit"><img src="images/retailsale.png" alt="" /></a>
 									<p>This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/SaraGGebregorgis/sql_retail_sales" class="button">View Project</a></li>
@@ -78,8 +138,8 @@
 								</article>
 								<article>
 									<header>
-										<span class="updateproject">Completed Project</span>
-										<h2><a href="https://github.com/SaraGGebregorgis/Coffee-Orders-Project">Coffee Orders Project<br />
+										<span class="updateproject completed">   Completed Project</span>
+										<h2><a href="https://github.com/SaraGGebregorgis/Coffee-Orders-Project">Coffee Orders <br /> Project
 										</a></h2>
 									</header>
 									<a href="https://github.com/SaraGGebregorgis/Coffee-Orders-Project" class="image fit"><img src="images/coffee.png" alt="" /></a>
@@ -91,8 +151,8 @@ It includes data cleaning, formula usage, and a dashboard with charts for easy i
 								</article>
 								<article>
 									<header>
-										<span class="updateproject">Completed Project</span>
-										<h2><a href="https://github.com/SaraGGebregorgis/Call-Center-Project?tab=readme-ov-file#call-center-project-">Call Center Project<br />
+										<span class="updateproject completed">   Completed Project</span>
+										<h2><a href="https://github.com/SaraGGebregorgis/Call-Center-Project?tab=readme-ov-file#call-center-project-">Call Center <br /> Project
 										</a></h2>
 									</header>
 									<a href="https://github.com/SaraGGebregorgis/Call-Center-Project?tab=readme-ov-file#call-center-project-" class="image fit"><img src="images/callcenter.png" alt="" /></a>
@@ -101,40 +161,49 @@ The dataset contained customer call logs, and I used PivotTables, charts, and fo
 									<ul class="actions special">
 										<li><a href="https://github.com/SaraGGebregorgis/Call-Center-Project?tab=readme-ov-file#call-center-project-" class="button">View Project</a></li>
 									</ul>
+								
 								</article>
+								</section>
+								</div>
+								
 							
+								<!-- Footer -->
+								<footer id="footer">
+						
 						<section class="split contact">
 							<section class="alt">
-								<h3>Location</h3>
-								<p><br />
-								Minneapolis, MN</p>
+								<h3>Address</h3>
+								<p>Minneapolis, MN<br /></p>
 							</section>
-							<section> 
+							<section>
 								<h3>Phone</h3>
 								<p><a href="#">(651) 703-8539</a></p>
-							
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">SaraGebregorgis@gmail.com</a></p>
+								<p><a href="#">saragebregorgis@gmail.com</a></p>
 							</section>
-							<h3>Social</h3>
-							<section><ul class="icons">
-							<li><a href="https://www.linkedin.com/in/sara-gebregorgis-30a691344/" class="icon brands fa-linkedin"><span class="label">Linkdln</span></a></li>
-							<li><a href="https://github.com/SaraGGebregorgis" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/sara-gebregorgis-30a691344/" class="icon brands fa-linkedin"><span class="label">LinkdIn</span></a></li>
+									<li><a href="https://github.com/SaraGGebregorgis" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
 						</section>
-
-
+					</footer>
 				
 
 				<!-- Copyright -->
+				
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+ 					 <ul>
+    				<li>&copy; Sara Gebregorgis</li>
+    				<li>Design: HTML5 UP</li>
+  					</ul>
 					</div>
 
-			</div>
+			
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
